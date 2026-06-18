@@ -1,4 +1,3 @@
-#"endpointAddress": "a2sjjocoz2jokj-ats.iot.us-east-1.amazonaws.com"
 import time
 import random
 import json
@@ -13,8 +12,8 @@ TOPIC = "sehir/cevre/kizilay" # Verilerimizi bu kanaldan (topic) göndereceğiz
 
 # Sertifika dosya isimleri (Uzantılarına ve isimlerine çok dikkat et)
 ROOT_CA = "AmazonRootCA1.pem"
-CERT_FILE = "086622c9bb4ced451a91245dc5d4a062e95eb82659ffd37ff9ef1c9877ac45a0-certificate.pem.crt" # İndirdiğin crt dosyasının adı
-KEY_FILE = "086622c9bb4ced451a91245dc5d4a062e95eb82659ffd37ff9ef1c9877ac45a0-private.pem.key"      # İndirdiğin key dosyasının adı
+CERT_FILE = "086622c9bb4ced451a91245dc5d4a062e95eb82659ffd37ff9ef1c9877ac45a0-certificate.pem.crt" # crt dosyasının adı
+KEY_FILE = "086622c9bb4ced451a91245dc5d4a062e95eb82659ffd37ff9ef1c9877ac45a0-private.pem.key"      # key dosyasının adı
 
 def generate_sensor_data():
     temperature = round(random.uniform(15.0, 35.0), 2)
